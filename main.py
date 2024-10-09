@@ -11,14 +11,15 @@ def main():
     """
 
     while total <= 100:
-        num = random.randint(1, 10)
-        numbers.append(num)
-        total += num
+        number = random.randint(1, 10)
+        total += number
+        numbers.append(number)
         
 
 
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
+    print ("sum of numbers less than 100: ", sum(numbers) - numbers[-1])
 
     ########################################
     # Do not delete the return statement
